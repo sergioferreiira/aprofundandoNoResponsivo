@@ -7,14 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/Logo.png">
     <title>AluraBooks</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <span class="container__hamburger container__image"></span>
+            <input type="checkbox" id="menu" class="container__button">
+            <!-- uma entrada de informação do tipo de box de checagem que foi definido o id de "menu" e a classe container__button -->
+            <label for="menu">
+                <!-- label associa o elemento que esta dentro dele com o id-->
+                <span class="container__hamburger container__image"></span>
+                <!-- span e utilizado para que não seja colocado uma imgagem pois ela e statica e não teria a interação do usuario, assim 
+                chamamos a img somente pelo css-->
+            </label>
+            <ul class="list-menu">
+                <li class="list-menu__title">Categorias</li>
+                <li class="list-menu__itens">
+                    <a href="#" class="list-menu__link">Programação</a>
+                </li>
+                <li class="list-menu__itens">
+                    <a href="#" class="list-menu__link">Front-end</a>
+                </li>
+                <li class="list-menu__itens">
+                    <a href="#" class="list-menu__link">Infraestrutura</a>
+                </li>
+                <li class="list-menu__itens">
+                    <a href="#" class="list-menu__link">Business</a>
+                </li>
+                <li class="list-menu__itens">
+                    <a href="#" class="list-menu__link">Design & UX</a>
+                </li>
+            </ul>
             <img src="/img/Logo.png" alt="logo alura books" class="container__image">
         </div>
         <div class="container">
@@ -23,13 +49,48 @@
             <a href="#"><img src="/img/Usuario.svg" alt="profile" class="container__image"></a>
         </div>
     </header>
-    <main>
-        <section>
+    <section class="banner">
+        <h2 class="banner__title">Já sabe por onde começar?</h2>
+        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrousel">
+        <h2 class="carrousel__title">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/img/Guia Front-end.svg" alt="livro guia front-end"></div>
+                <div class="swiper-slide"><img src="/img/Javascript.svg" alt="livro de javascript"></div>
+                <div class="swiper-slide"><img src="/img/Gestão2.svg" alt="livro de gestão"></div>
+                <div class="swiper-slide"><img src="/img/MEAN.svg" alt="livro de MEAN"></div>
+            </div>
 
-        </section>
-    </main>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </section>
+
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
 
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+.carrousel__title {
+    background-color: var(--white);
+    color: var(--orange);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 2%;
+}
+.swiper-pagination {
+    position: inherit;
+    margin: 2em 1em 1em 1em;
+}
+/* no carrousel e nessecario buscar a classe e definir qual item sera editado no caso abaixo a IMAGEM{img} */
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
