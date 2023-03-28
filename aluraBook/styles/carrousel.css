@@ -7,12 +7,14 @@
     text-align: center;
     padding: 2%;
 }
+
 .swiper-pagination {
     position: inherit;
     margin: 2em 1em 1em 1em;
 }
+
 /* no carrousel e nessecario buscar a classe e definir qual item sera editado no caso abaixo a IMAGEM{img} */
-.swiper-slide img{
+.swiper-slide img {
     width: 100%;
 }
 
@@ -20,3 +22,71 @@
 .swiper-button-next {
     display: none;
 }
+
+.ads {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.ads__description {
+    display: flex;
+}
+
+.ads__title {
+    font-family: var(--orange);
+    color: var(--orange);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0.5em 0;
+}
+
+.ads__titlebook {
+    font-family: var(--primary-font);
+    color: #002F52;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+.ads__text {
+    font-family: var(--primary-font);
+    color: rgba(0, 0, 0, 0.85);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10% 10% 0% 0%;
+}
+
+.ads__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+}
+
+.action__icons {
+    display: flex;
+}
+
+.action__icons__link {
+    margin: 0.5em;
+}
+
+.about__angular {
+    margin: 1em 0;
+}
+
+.about__angular__link {
+    padding: 1em 2.2em;
+    background-color: var(--orange);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
