@@ -1,0 +1,39 @@
+.news {
+    background-color: var(--white);
+    padding: 1em;
+}
+
+.news__title,
+.news__text {
+    font-family: var(--primary-font);
+    background: var(--blue-linear);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+}
+
+.news__title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.news__text {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 1em 0;
+}
+
+.news__button {
+    padding: 1em;
+    border: 1px solid #326589;
+    border-radius: 24px;
+    width: 90%;
+    text-align: center;
+}
+
+.news__button::placeholder {
+    font-family: var(--primary-font);
+    color: #326589;
+    background: url("/img/Vector.svg") no-repeat;
+    padding-left: 1.5em;
+}
