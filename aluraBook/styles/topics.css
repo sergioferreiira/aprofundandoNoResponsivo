@@ -4,16 +4,17 @@
 
 .topics__visit {
     background: var(--blue-linear);
-    text-align: center;
 }
-
+.title__div {
+    padding: 5%;
+}
 .topics__title {
     font-family: var(--primary-font);
     color: var(--white);
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    padding: 10%;
+    text-align: center;
 }
 
 .topics__itens {
