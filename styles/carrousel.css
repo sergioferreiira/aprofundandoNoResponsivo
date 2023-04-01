@@ -1,0 +1,47 @@
+
+.carrousel__title {
+    background-color: var(--white);
+    color: var(--orange);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 2%;
+}
+
+
+.swiper-pagination {
+    position: inherit;
+    margin: 0em 0em 1em 0em;
+}
+
+.swiper {
+    margin: 5%; 
+}
+
+/* no carrousel e nessecario buscar a classe e definir qual item sera editado no caso abaixo a IMAGEM{img} */
+.swiper-slide img {
+    width: 100%;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .carrousel__title {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .carrousel__1728 {
+        display: flex;
+    }
+
+}

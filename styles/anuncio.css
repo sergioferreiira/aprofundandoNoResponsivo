@@ -1,0 +1,95 @@
+.ads {
+    margin: 4%;
+    border-radius: 10px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ads__description {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    margin: 1em;
+}
+
+.ads__title {
+    font-family: var(--orange);
+    color: var(--orange);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0.5em 0;
+}
+
+.ads__titlebook {
+    font-family: var(--primary-font);
+    color: #002F52;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+.ads__text {
+    font-family: var(--primary-font);
+    color: rgba(0, 0, 0, 0.85);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10% 10% 0% 0%;
+}
+
+.ads__icons {
+    display: flex;
+    margin: 1em 0 0 0;
+}
+
+.action__icons {
+    display: flex;
+}
+
+.action__icons__link {
+    margin: 0.5em;
+}
+
+.angular__ads {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    justify-content: center;
+}
+
+.about__angular {
+    margin: 2em 0;
+}
+
+.about__angular__link {
+    padding: 1em 2.2em;
+    background-color: var(--orange);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+    .ads {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    .ads {
+        width: 50%;
+        margin: 1em auto;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .ads {
+        margin: auto 5em;
+    }
+
+}

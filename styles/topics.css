@@ -1,0 +1,38 @@
+.topics {
+    background-color: var(--white);
+}
+
+.topics__visit {
+    background: var(--blue-linear);
+}
+.title__div {
+    padding: 3%;
+}
+.topics__title {
+    font-family: var(--primary-font);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+
+.topics__itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0 25%; */
+    padding: 1em;
+}
+
+.topics__links {
+    padding: 1em;
+    margin: 1em 0.5em;
+    background: var(--orange);
+    display: inline-block;
+}
+
+.topics__links__links {
+    color: var(--white);
+    text-decoration: none;
+}

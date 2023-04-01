@@ -1,0 +1,27 @@
+@import url("/styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/carrousel.css");
+@import url("/styles/topics.css");
+@import url("/styles/anuncio.css");
+@import url("/styles/footer.css");
+@import url("/styles/contato.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --background-color: #EBECEE;
+    --white: #ffffff;
+    --orange: #EB9B00;
+    --black: #000000;
+    --blue-linear: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --primary-font: "Poppins";
+    --secondary-font: 'Josefin Sans';
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
