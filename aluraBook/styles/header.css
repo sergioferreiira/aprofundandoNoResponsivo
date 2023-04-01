@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.logo__text__title {
+    display: flex;
+    align-items: center;
+}
 .container__hamburger {
     width: 24px;
     height: 24px;
@@ -20,12 +24,17 @@
     display: inline-block;
 }
 
+.container__button:checked~ .container__gradient > .container__hamburger {
+    background-image: url("/img/menuAberto.svg");
+}
+.container__button:checked~.container__gradient {
+    background: var(--blue-linear);
+}
 .container__image {
     padding: 10px;
 }
 
 .list-menu {
-    display: none;
     position: absolute;
     top: 100%;
     background-color: var(--white);
@@ -38,11 +47,6 @@
     display: block;
 }
 
-.container__button {
-    display: none;
-}
-
-
 .list-menu__title {
     font-family: 'Poppins';
     font-style: normal;
@@ -53,7 +57,7 @@
 
 .list-menu__link {
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -67,18 +71,16 @@
 .list-menu__itens {
     padding: 1em;
 }
-.header__title {
-    display: none;
-}
-
-.header__responsive {
-    display: none;
-}
-
+.header__title,
+.container__button,
+.list-menu,
+.header__responsive,
 .desktop__header__text {
     display: none;
 }
+
 @media screen and (min-width: 1024px) {
+
     .header__title {
         display: block;
         font-family: var(--secondary-font);
@@ -102,7 +104,7 @@
     .responsive__categories{
         background: white;
     }
-    .responsive__categories:hover {
+    .checkbox__categorias:checked~.responsive__gradient>.responsive__categories {
         background: var(--blue-linear);
         color: var(--white);
     }
@@ -119,34 +121,49 @@
         width: auto;
 
     }
-
-    .checkbox__categorias {
-        display: none;
+    .list-menu__itens:hover {
+        background: var(--blue-linear);
     }
 
-    .menu__itens__responsive {
-        background: var(--blue-linear);
-        color: var(--white);
-        padding: 1rem;
+    .list-menu__itens:hover > .list-menu__link {
+        -webkit-text-fill-color: var(--white);
     }
 
     .responsive__header__itens {
         text-transform: uppercase;
-        padding: 1em 2em;
+        padding: 1em 1em;
         text-decoration: none;
         color: var(--black);
-
     }
 
-    .favorites__icon {
+    .container {
+        margin: 0 1.5em;
+    }
+
+    .favorites__icon,
+    .checkbox__categorias {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width: 1728px){
+
     .container__links{
         display: flex;
+    }
+    .fast__acess {
+        /* Ao aplicar o margin auto tanto left quanto right ele preenche o lado escolhido assim jogando os itens para o lado contrario */
+        margin-right: auto;
+    }
+    .desktop__header__text {
+        display: block;
+        
+    }
+
+    .container__links__1728 {
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+        margin: 0 1.5em 0 0;
     }
 }

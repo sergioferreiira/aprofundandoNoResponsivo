@@ -6,7 +6,7 @@
     background: var(--blue-linear);
 }
 .title__div {
-    padding: 5%;
+    padding: 3%;
 }
 .topics__title {
     font-family: var(--primary-font);
@@ -21,6 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* margin: 0 25%; */
+    padding: 1em;
 }
 
 .topics__links {
