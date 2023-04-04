@@ -25,7 +25,7 @@
 }
 
 .container__button:checked~ .container__gradient > .container__hamburger {
-    background-image: url("/img/menuAberto.svg");
+    background-image: url("img/menuAberto.svg");
 }
 .container__button:checked~.container__gradient {
     background: var(--blue-linear);
