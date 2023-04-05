@@ -1,6 +1,6 @@
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/carrousel.css");
+@import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carrousel.css");
 @import url("styles/topics.css");
 @import url("styles/anuncio.css");
 @import url("styles/footer.css");
